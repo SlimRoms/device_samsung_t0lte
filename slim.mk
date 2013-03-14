@@ -1,5 +1,5 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := t0lte
@@ -8,15 +8,28 @@ PRODUCT_RELEASE_NAME := t0lte
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common slim stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
+# Inherit torch settings
+$(call inherit-product, vendor/slim/config/common_ledflash.mk)
+
+# Inherit device settings
+$(call inherit-product, vendor/slim/config/common_sgs.mk)
+
+PRODUCT_COPY_FILES +=  \
+    vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+
+#copy 00check
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lte
-PRODUCT_NAME := cm_t0lte
+PRODUCT_NAME := slim_t0lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N7105
 PRODUCT_MANUFACTURER := samsung
