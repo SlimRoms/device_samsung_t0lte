@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc
 
+# Product specific Packages 
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
