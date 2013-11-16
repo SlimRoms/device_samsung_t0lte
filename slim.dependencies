@@ -22,6 +22,6 @@
     {
         "repository": "CyanogenMod/android_device_samsung_smdk4412-qcom-common",
         "target_path": "device/samsung/smdk4412-qcom-common",
-        "branch": "cm-10.2"
+        "branch": "cm-11.0"
     }
 ]
