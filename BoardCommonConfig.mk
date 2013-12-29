@@ -36,7 +36,7 @@ TARGET_KERNEL_CONFIG := slim_t0ltecdma_defconfig
 else
 TARGET_KERNEL_CONFIG := slim_t0lte_defconfig
 endif
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
