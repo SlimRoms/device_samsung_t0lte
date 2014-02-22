@@ -2722,9 +2722,7 @@ static int adev_set_voice_volume(struct audio_hw_device *dev, float volume)
 {
     struct m0_audio_device *adev = (struct m0_audio_device *)dev;
 
-    adev->voice_volume = volume;
-
-    ALOGD("%s: Voice Index: %i", __func__, voice_index);
+    ALOGD("%s: Voice Index: %i  Volume: %f", __func__, voice_index, volume);
 
     if (adev->mode == AUDIO_MODE_IN_CALL) {
         if (csd_volume_index == NULL) {
