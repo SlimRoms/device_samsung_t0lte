@@ -42,6 +42,8 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+
 # assert
 TARGET_OTA_ASSERT_DEVICE := t0lte,t0ltexx,GT-N7105,t0ltedv,GT-N7105T,t0lteatt,SGH-I317,t0ltetmo,SGH-T889,t0ltecan,t0ltevl,SGH-I317M
 

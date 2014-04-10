@@ -38,10 +38,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.smdk4x12
-
 # NFC
 PRODUCT_PACKAGES += \
     nfc.exynos4 \
