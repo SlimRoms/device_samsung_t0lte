@@ -65,9 +65,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Stk \
-    #SamsungServiceMode
-
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+    SamsungServiceMode
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
