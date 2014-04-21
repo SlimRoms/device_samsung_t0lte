@@ -2,14 +2,14 @@
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Inherit some common slim stuff.
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := t0lte
