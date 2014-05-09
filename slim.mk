@@ -12,7 +12,7 @@ $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := t0lte
