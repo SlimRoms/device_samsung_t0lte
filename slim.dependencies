@@ -15,11 +15,6 @@
         "branch": "kk4.4"
     },
     {
-        "repository": "SlimRoms/proprietary_vendor_samsung",
-        "target_path": "vendor/samsung",
-        "branch": "kk4.4"
-    },
-    {
         "repository": "CyanogenMod/android_device_samsung_smdk4412-qcom-common",
         "target_path": "device/samsung/smdk4412-qcom-common",
         "branch": "cm-11.0"
